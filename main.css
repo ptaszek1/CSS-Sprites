@@ -1,0 +1,95 @@
+body {
+    overflow-x: hidden;
+}
+
+
+
+/*Raven animation*/
+
+.raven {
+    width:225px;
+    height:210px;
+    background: url(raven.png);
+    position: absolute;
+    top: 5%;
+    left: -15%;
+    animation:  ravenAnim 1s 1s infinite steps(9),
+    ravenFly 15s 0s ease-out;
+    overflow: hidden;
+}
+
+@keyframes ravenAnim {
+    100% {
+        background-position: -1860px 0;
+    }
+}
+@keyframes ravenFly {
+    100% {
+        left: 102%;
+    }
+}
+
+/*Girl in green t-shirt animation*/
+
+
+.girl-run {
+    margin-top: 230px;
+    width:225px;
+    height:290px;
+    background: url(spritestrip.png);
+    position: absolute;
+    left: -16%;
+    animation:  girlAnim 1s 1s infinite steps(8),
+    girlRun 15s 0s ease-out;
+    overflow: hidden;
+}
+
+@keyframes girlAnim {
+    100% {
+        background-position: -2060px 0;
+    }
+}
+@keyframes girlRun {
+    100% {
+        left: 102%;
+    }
+}
+
+
+/*Big Blue bird animation*/
+
+.lets-walk {
+    margin-top: 500px;
+    width:590px;
+    height:400px;
+    background: url(lets-walk.png);
+    position: absolute;
+    animation:  walkAnim 1s 1s infinite steps(4)
+}
+
+@keyframes walkAnim {
+    100% {
+        background-position: -2400px 0;
+    }
+}
+
+
+
+/*Green Pig Animation:*/
+
+
+.pig {
+    margin-top: 500px;
+    margin-left: 600px;
+    width:125px;
+    height:120px;
+    background: url(pig.png);
+    position: absolute;
+    animation:  pigAnim 2.5s 0s infinite steps(18)
+}
+
+@keyframes pigAnim {
+    100% {
+        background-position: -2322px 0;
+    }
+}
